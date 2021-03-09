@@ -7,10 +7,10 @@ class Order extends Component {
     console.log(this.props);
     return(
       <View>
-        <Text class={styles.textCenter}>helo temen. you have many order : {this.props.orders}</Text>
+        <Text style={styles.textCenter}>helo temen. you have many order : {this.props.orders}</Text>
 
-        <Button class={styles.buttonOrder} onPress={this.props.pressAddOrder} title="Add Order"/>
-        <Button class={styles.buttonOrder} onPress={this.props.pressDeleteOrder} title="Delete Order"/>
+        <Button style={styles.buttonOrder} onPress={this.props.pressAddOrder} title="Add Order"/>
+        <Button style={styles.buttonOrder} onPress={this.props.pressDeleteOrder} title="Delete Order"/>
       </View>
     );
   }
@@ -22,7 +22,9 @@ const styles = StyleSheet.create({
   },
 
   textCenter: {
-    textCenter: 'center'
+    textAlign: 'center',
+    color: '#000',
+    justifyContent: "center",
   }
 })
 

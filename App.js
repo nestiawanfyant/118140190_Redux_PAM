@@ -8,6 +8,7 @@ import Order from './page/order'
 // global state
 const globalstate = {
   totalOrder: 3,
+  data: {}
 }
 
 // reducer  
